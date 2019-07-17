@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Alex Kim</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+    <!-- Icon Library -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Extra Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="support/typed.min.js"></script>
+    <script src="index.js"></script>
+    <!-- Loading script -->
+    <link rel="stylesheet" type="text/css" href="support/loading-bar.css"/>
+    <script type="text/javascript" src="support/loading-bar.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm sticky-top customizedNav" id="navtop">
+        <a class="navbar-brand logo" href="Resume2018-2019.pdf"><i class="far fa-file-word fa-1x fa-border"></i>Resume</a>
+        <ul class="navbar-nav innerNav">
+            <li class="nav-item">
+                <a class="nav-link tabs" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link tabs" href="#About">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link tabs" href="#Experience">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link tabs" href="#Projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link tabs" href="#Skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link tabs" href="#Contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <script>
+    $('a[href]').click(function(event){
+        console.log('fired');
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 800);
+            event.preventDefault();
+    });
+    </script>
+    <div class="jumbotron jumbotron-fluid" id="Home">
+        <div class="jumbo-frame">
+            <div class="col-lg-7">
+                <div id="describe-top">
+                    <div class="primary-header">
+                        <h1 class="display-4">Alexander Kim</h1>
+                    </div>
+                    <div class="socialbox">
+                        <a href="https://www.facebook.com/alexander.kim.79219" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/_alexjkim/?hl=en" class="fa fa-instagram"></a>
+                        <a href="https://www.linkedin.com/in/alexjongkukkim" class="fa fa-linkedin"></a>
+                        <a href="https://www.google.com/maps/place/Seattle,+WA/@47.6129432,-122.482148,11z/data=!3m1!4b1!4m5!3m4!1s0x5490102c93e83355:0x102565466944d59a!8m2!3d47.6062095!4d-122.3320708" class="fa fa-map-pin"></a>
+                        <a href="https://github.com/alexjk38" class="fa fa-github"></a>
+                    </div>
+                    <h1><span class="typer"></span></h1>
+                    <script type="text/javascript">
+                        var typed = new Typed('.typer', {
+                            strings: ["Driven", "Persistent", "Student", "Programmer"],
+                            typeSpeed: 55
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid regularPanel">
+        <h1 class="display-4 primary-header" id="About">About Me</h1>
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="images/ProfilePicture.JPG" id="profile-picture">
+            </div>
+            <div class="col-lg-7 excerpt" style="padding: 30px;">
+                <h2 class="outerText">Hello!</h2>
+                <h2 class="outerText"> I'm Alex </h2>
+                <div class="innerText">
+                    <p>________</p>
+                    <p>I'm currently a student at the University of Washington studying computer science and working towards 
+                       developing my knowledge of the professional field. I first started my venture into the field of computer 
+                       science after junior year of high school when I gained interest in web development.
+                    </p>
+                    <p> Now, I primarily focus outside of my classes on research in virtual reality and human computer interaction
+                        because of my passion for increased accessible technology. With this mindset, I love tackling complex problems
+                        and taking my own creative twist to find feasible solutions. 
+                    </p>
+                    <p> In my free time, I enjoy digging into new technologies for web development, building websites, and playing sports
+                        like tennis and bowling.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid alternatePanel">
+        <h1 class="display-4 primary-header" id="Experience">Experience</h1>
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 class="exheader excerpt">University of Washington</h2>
+                <p class="exin">B.S. Computer Science</p>
+                <p class="exin">Expected Graduation <strong>Spring 2021</strong></p>
+                <p class="exin">Coursework: Java Programming I & II, <strong>Data Structures and Parallelism</strong>, Foundations of Computing I & II, 
+                                <strong>Introduction to Data Management</strong>, <strong>Systems Programming</strong>, The Hardware/Software Interface,
+                                Social networking technologies, Technical Foundations of Informatics</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/Husky.png" height="250px" width="250px">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 class="exheader excerpt">Stryker</h2>
+                <p class="exin"><strong>Software Engineering Intern</strong> for the Research and Development Team</p>
+                <p class="exin"><strong>Summer 2019</strong></p>
+                <p class="exin">Description forthcoming...</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/Stryker.png" height="300px" width="450px">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 class="exheader excerpt">CSE Teacher's Assistant</h2>
+                <p class="exin">Classes Taught: <strong>CSE 142/143 (Java I & II)</strong></p>
+                <p class="exin"><strong>March 2018 - Present</strong></p>
+                <p class="exin">As a teacher's assistant I was tasked with the responsibility of teaching section once a week
+                                to a class of about 20 students, grading programming assignments and exams, attending meetings
+                                and holding office hours.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/CSElogo.png" height="250px" width="250px">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid regularPanel">
+        <h1 class="display-4 primary-header" id="Projects">Projects</h1>
+
+        <div class="card-columns" id="projects">
+            <div class="card" onclick="location.href='https://medium.com/spatialdev/spatialdev-atuw-maphacks-e3043e467c08';">
+                <img src="images/FinalImage.png" class="card-img-top" alt="nigis" id="projectCard">
+                <div class="card-body">
+                    <h5 class="card-title"><u>Critigen Maphacks</u></h5>
+                    <p class="card-text">A hackathon where teams were set with the task of addressing a pressing geographical or societal 
+                                    problem in the Greater Seattle area through data manipulation and visualization. Tools used for 
+                                    my team's project included <u>Mapbox, QGIS, Leaflet, and Javascript.</u> <u> (First Place)</u></p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='https://kimalexj.shinyapps.io/CrimeVis/';">
+                <img src="images/CrimeVis.png" class="card-img-top" alt="CrimeVis" id="projectCard">
+                <div class="card-body">
+                    <h5 class="card-title"><u>CrimeVis</u></h5>
+                    <p class="card-text">Created to provide students in the Seattle area with information regarding crime rates
+                                         in regions around Seattle, CrimeVis as a project promoted for greater awareness of travel
+                                         safety. Tools used include <u>R, Shiny, RStudio.</u></p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='https://realitylab.uw.edu/';">
+                <img src="images/RealityLab.png" class="card-img-top" alt="Rlab" id="projectCard">
+                <div class="card-body">
+                    <h5 class="card-title"><u>UW RealityLab Website</u></h5>
+                    <p class="card-text">Since obtaining the role of webmaster for the RealityLab website, I have had responsibilities
+                                         that include implementing scalability, making frequent updates as the lab requests, creating
+                                         webhooks for live production, and ensuring security through proper authentication. Tools for  
+                                         this project include <u>HTML, CSS, Javascript, Wordpress, Github.</u></p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='https://github.com/kimalexj/ExperiVid';">
+                <img src="images/ExperiVid.png" class="card-img-top" alt="Experivid" id="projectCard">
+                <div class="card-body">
+                    <h5 class="card-title"><u>ExperiVid</u></h5>
+                    <p class="card-text">For the sole purpose of data collection, Experivid, currently still in development, is a web 
+                                         application that allows users to pose over a superimposed image on their camera to screenshot.
+                                         These images will then be used to train a neural network that will work to eventually create 
+                                         predictions to which images would work best for the user's face shape. Tools used for this include
+                                         <u>HTML, CSS (Bootstrap), Javascript.</u></p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='https://huskytech.org/#/';">
+                <img src="images/HuskyTech.png" class="card-img-top" alt="HuskyTech" id="projectCard">
+                <div class="card-body">
+                    <h5 class="card-title"><u>HuskyTech Website</u></h5>
+                    <p class="card-text">HuskyTech a student organization at the UW works to promote job opportunities for students. I 
+                                         work on the developer team for the club. I have personally been involved with creating the main 
+                                         website, reworking the resume bank site for sponsors, and additional features like check-in systems. 
+                                         Tools used in this stack include <u>Reactjs, CSS, AWS, and Firebase.</u></p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='https://github.com/kimalexj';">
+                <img src="images/Chess.png" class="card-img-top" alt="Chess" id="projectCard">
+                <div class="card-body">
+                    <h5 class="card-title"><u>Chess Bot</u></h5>
+                    <p class="card-text">Designed to beat bots provided by the CSE department, this chess bot went through several
+                                         stages of development including simple evaluation per turn up to an alpha beta pruning
+                                         algorithm. In addition, these designed algorithms were also created to funtion in parallel.
+                                         The primary language used for this project is <u>Java.</u></p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='';">
+                <img src="images/AccessAble.png" class="card-img-top" alt="Chess" id="projectCard">
+                <div class="card-body">
+                    <h5 class="card-title"><u>AccessAble</u></h5>
+                    <p class="card-text">A high-fidelity prototype of a mobile application designed to assist those with physical 
+                                         disabilities with transportation, AccessAble was created from a spark to advance accessable 
+                                         technology. Tools used for this prototyping include mainly <u>Figma and Invision.</u> Additionally, user 
+                                         research studies were conducted prior to prototyping and high marks were received at the UW prototyping
+                                         fair.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid alternatePanel">
+        <h1 class="display-4 primary-header" id="Skills">Skills</h1>
+        <div class="row">
+            <div class="col-lg-3 bubbleBar">
+                <div data-preset="bubble" class="ldBar label-center" 
+                data-value="60" 
+                data-pattern-size="80" 
+                data-fill="data:ldbar/res,bubble(#248,#fff,50,5)"
+                style="width: 200px; height: 200px;"
+                ></div>
+            </div>
+            <div class="col-lg-3 bubbleBar">
+                <div data-preset="bubble" class="ldBar label-center" 
+                data-value="30" 
+                data-pattern-size="80" 
+                data-fill="data:ldbar/res,bubble(#380,#fff,50,5)"
+                style="width: 200px; height: 200px;"
+                ></div>
+            </div>
+            <div class="col-lg-3 bubbleBar">
+                <div data-preset="bubble" class="ldBar label-center" 
+                data-value="40" 
+                data-pattern-size="80" 
+                data-fill="data:ldbar/res,bubble(#200,#fff,50,5)"
+                style="width: 200px; height: 200px;"
+                ></div>
+            </div>
+            <div class="col-lg-3 bubbleBar">
+                <div data-preset="bubble" class="ldBar label-center" 
+                data-value="50" 
+                data-pattern-size="80" 
+                data-fill="data:ldbar/res,bubble(#900,#fff,50,5)"
+                style="width: 200px; height: 200px;"
+                ></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 bubbleBar">
+                <h4 class="skillTitles">Web Development</h4>
+            </div>
+            <div class="col-lg-3 bubbleBar">
+                <h4 class="skillTitles">Operating Systems</h4>
+            </div>
+            <div class="col-lg-3 bubbleBar">
+                <h4 class="skillTitles">Applications</h4>
+            </div>
+            <div class="col-lg-3 bubbleBar">
+                <h4 class="skillTitles">Languages</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 categories">
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>jQuery</li>
+                    <li>Reactjs</li>
+                    <li>Wordpress</li>
+                    <li>Django</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 categories">
+             <ul>
+                <li>Linux</li>
+                <li>Mac OS</li>
+                <li>Windows</li>
+            </ul>   
+            </div>
+            <div class="col-lg-3 categories">
+                 <ul>
+                    <li>Microsoft Office</li>
+                    <li>Cyberduck</li>
+                    <li>Eclipse</li>
+                    <li>Visual Studio Code</li>
+                    <li>Google Compute Engine</li>
+                    <li>Github</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 categories">
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>R</li>
+                    <li>C and C++</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid regularPanel">
+        <h1 class="display-4 primary-header" id="Contact">Contact</h1>
+        <form id="contactForm">
+            <label for="exampleFormControlInput1">Name</label>
+            <div class="form-row form-group">
+                <div class="col">
+                    <input name="sender" type="text" class="form-control" id="name" placeholder="First Last">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" name="senderEmail" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea name="message" class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button class="btn btn-primary" id="submit">Submit</button>
+        </form>
+
+    </div>
+  </body>
+</html>
